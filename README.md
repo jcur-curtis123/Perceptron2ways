@@ -2,7 +2,7 @@
 
 ## 1. How many iterations did you decide to train your model on?
 
-I decided to train my model with 1000 iterations as this provided the highest accuracy overall
+I decided to train my model with 1000 iterations as this provided the highest accuracy overall. I have created a list of iterations values, and I iterated over the iterations to determine the highest accuracy score. Thus, the best_model or highest score was chosen.
 
 ## 2. What was the result of predicting and scoring sonar_test.csv?
 
