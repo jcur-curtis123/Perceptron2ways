@@ -22,4 +22,3 @@ The dataframe implementation is 0.0046 seconds.
 The dataframe implementation is ~50% faster. 
 
 The predict method gets the most out of being vectored as matrix operations are existent for entire rows by a weight vector. The update does not get the most as it still has to update weights one at a time. 
----
