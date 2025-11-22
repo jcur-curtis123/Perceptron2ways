@@ -38,7 +38,7 @@ def main():
 
     '''
 
-    training_path = "/Users/jacobcurtis/Desktop/DS 5010 Perceptrons/Perceptron_oo/sonar_training.csv"
+    training_path = "/Users/jacobcurtis/Desktop/DS 5010 Perceptrons/Perceptron_oo/data/sonar_training.csv"
     # make records from the training dataset
     training_data = make_records(training_path)
 
@@ -61,7 +61,7 @@ def main():
     '''
     let's create test_records similar process of creating training records
     '''
-    test_path = "/Users/jacobcurtis/Desktop/DS 5010 Perceptrons/Perceptron_oo/sonar_test.csv"
+    test_path = "/Users/jacobcurtis/Desktop/DS 5010 Perceptrons/Perceptron_oo/data/sonar_test.csv"
     test_records = make_records(test_path)
 
     # test is only ran once to generalize how well the model is doing

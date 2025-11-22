@@ -59,14 +59,14 @@ def main():
 
     print("Timing OO version:")
     # create training records for the purpose of timing of iterations
-    training_records = make_records("/Users/jacobcurtis/Desktop/DS 5010 Perceptrons/Perceptron_oo/Perceptron_df/sonar_training.csv")
+    training_records = make_records("/Users/jacobcurtis/Desktop/DS 5010 Perceptrons/Perceptron_oo/data/sonar_training.csv")
 
     # lets do 100 runs for timing purposes
     for i in range(100):
         time_oo(training_records)
 
     print("Timing DF version:")
-    df = pd.read_csv("/Users/jacobcurtis/Desktop/DS 5010 Perceptrons/Perceptron_oo/sonar_training.csv", header=None, skiprows=1)
+    df = pd.read_csv("/Users/jacobcurtis/Desktop/DS 5010 Perceptrons/Perceptron_oo/Perceptron_df/data/sonar_training.csv", header=None, skiprows=1)
     df.insert(0, "bias", 1) # insert bias manually here, needs to be consistent to perceptron_oo
 
     # lets do 100 runs for timing purposes

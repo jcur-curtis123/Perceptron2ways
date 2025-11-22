@@ -26,14 +26,14 @@ def df_run_training(iterations, df):
 def main():
 
     # Load training CSV
-    train_df = pd.read_csv("/Users/jacobcurtis/Desktop/DS 5010 Perceptrons/Perceptron_oo/Perceptron_df/sonar_training.csv", header=None, skiprows=1)
+    train_df = pd.read_csv("/Users/jacobcurtis/Desktop/DS 5010 Perceptrons/Perceptron_oo/Perceptron_df/data/sonar_training.csv", header=None, skiprows=1)
     
     # Add bias column
     train_df = Perceptron_DF.bias(train_df)
 
 
     # Load test CSV
-    test_df = pd.read_csv("/Users/jacobcurtis/Desktop/DS 5010 Perceptrons/Perceptron_oo/Perceptron_df/sonar_test.csv", header=None, skiprows=1)
+    test_df = pd.read_csv("/Users/jacobcurtis/Desktop/DS 5010 Perceptrons/Perceptron_oo/Perceptron_df/data/sonar_test.csv", header=None, skiprows=1)
     
     # Add bias column
     test_df = Perceptron_DF.bias(test_df)
